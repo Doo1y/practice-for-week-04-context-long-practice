@@ -6,7 +6,7 @@ describe("allTheArgs()", function () {
     return "You bowed to " + names.join(" and ");
   };
 
-  const adder = (...nums) => nums.reduce((num, sum) => sum + num);
+  const adder = (...nums) => nums.reduce((num, sum) => num + sum);
 
   it("should return a function that when invoked will use the arguments that was passed in to allTheArgs", function () {
     let addFive = allTheArgs(adder, 5);
